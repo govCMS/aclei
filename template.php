@@ -17,12 +17,12 @@
  *   The name of the template being rendered ("maintenance_page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function sport_preprocess_maintenance_page(&$variables, $hook) {
+function aclei_preprocess_maintenance_page(&$variables, $hook) {
   // When a variable is manipulated or added in preprocess_html or
   // preprocess_page, that same work is probably needed for the maintenance page
   // as well, so we can just re-use those functions to do that work here.
-  sport_preprocess_html($variables, $hook);
-  sport_preprocess_page($variables, $hook);
+  aclei_preprocess_html($variables, $hook);
+  aclei_preprocess_page($variables, $hook);
 }
 // */
 
@@ -35,7 +35,7 @@ function sport_preprocess_maintenance_page(&$variables, $hook) {
  *   The name of the template being rendered ("html" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function sport_preprocess_html(&$variables, $hook) {
+function aclei_preprocess_html(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 
   // The body tag's classes are controlled by the $classes_array variable. To
@@ -54,7 +54,7 @@ function sport_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function sport_preprocess_page(&$variables, $hook) {
+function aclei_preprocess_page(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -68,12 +68,12 @@ function sport_preprocess_page(&$variables, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function sport_preprocess_node(&$variables, $hook) {
+function aclei_preprocess_node(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // sport_preprocess_node_page() or
-  // sport_preprocess_node_story().
+  // aclei_preprocess_node_page() or
+  // aclei_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
@@ -90,7 +90,7 @@ function sport_preprocess_node(&$variables, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function sport_preprocess_comment(&$variables, $hook) {
+function aclei_preprocess_comment(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -104,7 +104,7 @@ function sport_preprocess_comment(&$variables, $hook) {
  *   The name of the template being rendered ("region" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function sport_preprocess_region(&$variables, $hook) {
+function aclei_preprocess_region(&$variables, $hook) {
   // Don't use Zen's region--sidebar.tpl.php template for sidebars.
   //if (strpos($variables['region'], 'sidebar_') === 0) {
   //  $variables['theme_hook_suggestions'] =
@@ -122,7 +122,7 @@ function sport_preprocess_region(&$variables, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function sport_preprocess_block(&$variables, $hook) {
+function aclei_preprocess_block(&$variables, $hook) {
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 }
@@ -131,7 +131,7 @@ function sport_preprocess_block(&$variables, $hook) {
 /**
  * Implementation for govcms_social_link.
  */
-function sport_govcms_social_link($variables) {
+function aclei_govcms_social_link($variables) {
   $title = $variables['title'];
   $output = '';
 
@@ -170,7 +170,7 @@ function sport_govcms_social_link($variables) {
 /**
  * Returns HTML for a button form element.
  */
-function sport_button($variables) {
+function aclei_button($variables) {
   $element = $variables['element'];
   $element['#attributes']['type'] = 'submit';
   element_set_attributes($element, array('id', 'name', 'value'));
@@ -186,7 +186,7 @@ function sport_button($variables) {
 /**
  * Implements hook_form_alter().
  */
-function sport_form_search_api_page_search_form_default_search_alter(&$form, &$form_state, $form_id) {
+function aclei_form_search_api_page_search_form_default_search_alter(&$form, &$form_state, $form_id) {
   if (isset($form['id']['#value']) && isset($form['keys_' . $form['id']['#value']])) {
     $form['keys_' . $form['id']['#value']]['#attributes']['placeholder'] = t('Search website…');
   }
@@ -195,7 +195,7 @@ function sport_form_search_api_page_search_form_default_search_alter(&$form, &$f
 /**
  * Implements hook_preprocess_panels_pane().
  */
-function sport_preprocess_panels_pane(&$variables) {
+function aclei_preprocess_panels_pane(&$variables) {
   if ($variables['pane']->type == 'bean_panels' && isset($variables['pane']->configuration['bean_delta'])) {
     $delta = $variables['pane']->configuration['bean_delta'];
     $variables['theme_hook_suggestions'][] = 'panels_pane__' . str_replace('-', '_', $delta);
@@ -205,7 +205,7 @@ function sport_preprocess_panels_pane(&$variables) {
 /**
  * Returns HTML for a query pager.
  */
-function sport_pager($variables) {
+function aclei_pager($variables) {
   $tags = $variables['tags'];
   $element = $variables['element'];
   $parameters = $variables['parameters'];
@@ -357,7 +357,7 @@ function sport_pager($variables) {
 /**
  * Returns HTML for a link to a specific query result page.
  */
-function sport_pager_link__responsive($variables) {
+function aclei_pager_link__responsive($variables) {
   $variables['attributes']['class'][] = 'pager-responsive__link';
   return theme_pager_link($variables);
 }
@@ -365,7 +365,7 @@ function sport_pager_link__responsive($variables) {
 /**
  * Returns HTML for the "first page" link in a query pager.
  */
-function sport_pager_first__responsive($variables) {
+function aclei_pager_first__responsive($variables) {
   $text = $variables['text'];
   $element = $variables['element'];
   $parameters = $variables['parameters'];
@@ -385,7 +385,7 @@ function sport_pager_first__responsive($variables) {
 /**
  * Returns HTML for the "previous page" link in a query pager.
  */
-function sport_pager_previous__responsive($variables) {
+function aclei_pager_previous__responsive($variables) {
   $text = $variables['text'];
   $element = $variables['element'];
   $interval = $variables['interval'];
@@ -419,7 +419,7 @@ function sport_pager_previous__responsive($variables) {
 /**
  * Returns HTML for the "next page" link in a query pager.
  */
-function sport_pager_next__responsive($variables) {
+function aclei_pager_next__responsive($variables) {
   $text = $variables['text'];
   $element = $variables['element'];
   $interval = $variables['interval'];
@@ -452,7 +452,7 @@ function sport_pager_next__responsive($variables) {
 /**
  * Returns HTML for the "last page" link in query pager.
  */
-function sport_pager_last__responsive($variables) {
+function aclei_pager_last__responsive($variables) {
   $text = $variables['text'];
   $element = $variables['element'];
   $parameters = $variables['parameters'];
@@ -472,7 +472,7 @@ function sport_pager_last__responsive($variables) {
 /**
  * Returns HTML for a list or nested list of items.
  */
-function sport_item_list__pager($variables) {
+function aclei_item_list__pager($variables) {
   $items = $variables['items'];
   $attributes = $variables['attributes'];
   $output = '';
@@ -505,7 +505,7 @@ function sport_item_list__pager($variables) {
       }
       if (count($children) > 0) {
         // Render nested list.
-        $data .= sport_item_list__pager(array(
+        $data .= aclei_item_list__pager(array(
           'items' => $children,
           'attributes' => array(),
         ));
@@ -520,7 +520,7 @@ function sport_item_list__pager($variables) {
 /**
  * Implements hook_preprocess_menu_link().
  */
-function sport_preprocess_menu_link(&$variables, $hook) {
+function aclei_preprocess_menu_link(&$variables, $hook) {
   // For quick links, load the svg icons.
   if (isset($variables['element']['#bid']['delta']) && $variables['element']['#bid']['delta'] == 'ctools-menu-frontpage-quicklinks-1') {
     $svg = '';
@@ -558,7 +558,7 @@ function sport_preprocess_menu_link(&$variables, $hook) {
 /**
  * Implements theme_webform_element().
  */
-function sport_webform_element($variables) {
+function aclei_webform_element($variables) {
   $element = $variables['element'];
   $value = $variables['element']['#children'];
 
@@ -616,7 +616,7 @@ function sport_webform_element($variables) {
 /**
  * Implements hook_js_alter().
  */
-function sport_js_alter(&$js) {
+function aclei_js_alter(&$js) {
   $govcms_library_dir = 'profiles/govcms/libraries';
   unset($js[$govcms_library_dir . '/html5placeholder/jquery.placeholder.js']);
 }
@@ -624,7 +624,7 @@ function sport_js_alter(&$js) {
 /**
  * Implements theme_preprocess_image_style().
  */
-function sport_preprocess_image_style(&$vars) {
+function aclei_preprocess_image_style(&$vars) {
   if ($vars['style_name'] == 'image_and_text_landing_page') {
     $vars['attributes']['class'][] = 'grayscale grayscale-fade';
   }
