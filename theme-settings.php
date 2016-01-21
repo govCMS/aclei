@@ -8,7 +8,7 @@
 /**
  * Implements hook_form_system_theme_settings_alter().
  */
-function sport_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL) {
+function agency_whitesite_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL) {
 
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
@@ -17,10 +17,10 @@ function sport_form_system_theme_settings_alter(&$form, &$form_state, $form_id =
 
   // Create the form using Forms API: http://api.drupal.org/api/7
   // Delete this line if you want to use this setting
-  // $form['sport_example'] = array(
+  // $form['agency_whitesite_example'] = array(
   // '#type' => 'checkbox',
-  // '#title' => t('sport sample setting'),
-  // '#default_value' => theme_get_setting('sport_example'),
+  // '#title' => t('agency_whitesite sample setting'),
+  // '#default_value' => theme_get_setting('agency_whitesite_example'),
   // );
   //
 

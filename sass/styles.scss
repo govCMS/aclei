@@ -1,41 +1,16 @@
-/**
- * @file
- * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
- */
 
-// Colors and Sass
-//
-// Documentation for colors and Sass mixins and variables.
-//
-// Weight: -1
-//
-// Styleguide: sass
+// @import 'variables'; //errors
+@import 'base';
 
-// Import Sass mixins, variables, Compass modules, etc.
-@import 'init';
 
-// Base
-//
-// These are the base styles applied to HTML elements.
-//
-// Styleguide: base
-@import 'base/*';
 
-// Layouts
-//
-// The layout styling for major parts of the page that are included with the
-// theme. Note: some Panels layouts are included in other parts of the system
-// and are not documented.
-//
-// Styleguide: layouts
-@import 'layouts/*';
 
-// Components
-//
-// Design components are reusable designs that can be applied using just the CSS
-// class names specified in the component.
-//
-// Weight: 1
-//
-// Styleguide: components
-@import 'components/*';
+// our vars
+$primaryColour: #4DC9E3;
+$primaryColour2: #1675bc;
+
+
+@import 'govcms';
+@import 'gov-blog';
+@import 'responsive';
+@import 'print';

@@ -136,7 +136,7 @@ function aclei_govcms_social_link($variables) {
   $output = '';
 
   if ($title == 'Youtube') {
-    $variables['icon'] = base_path() . drupal_get_path('theme', 'sport') . '/images/youtube.png';
+    $variables['icon'] = base_path() . drupal_get_path('theme', 'aclei') . '/images/youtube.png';
   }
 
   $service_image = theme('image', array(
@@ -180,7 +180,7 @@ function aclei_button($variables) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
 
-  return '<button' . drupal_attributes($element['#attributes']) . ' />' . $element['#attributes']['value'] . '</button>';
+  return '<button' . drupal_attributes($element['#attributes']) . '>' . $element['#attributes']['value'] . '</button>';
 }
 
 /**
@@ -526,27 +526,27 @@ function aclei_preprocess_menu_link(&$variables, $hook) {
     $svg = '';
     switch ($variables['element']['#original_link']['mlid']) {
       case '695':
-        $svg = 'check-substances';
+        $svg = 'sample-svg';
         break;
 
       case '696':
-        $svg = 'elearning';
+        $svg = 'sample-svg';
         break;
 
       case '697':
-        $svg = 'location-log';
+        $svg = 'sample-svg';
         break;
 
       case '698':
-        $svg = 'therapeutic-exemptions';
+        $svg = 'sample-svg';
         break;
 
       case '699':
-        $svg = 'report-doping';
+        $svg = 'sample-svg';
         break;
     }
     if ($svg) {
-      $svg = file_get_contents(DRUPAL_ROOT . '/' . drupal_get_path('theme', 'sport') . '/images/icons/quick-links--' . $svg . '.svg');
+      $svg = file_get_contents(DRUPAL_ROOT . '/' . drupal_get_path('theme', 'aclei') . '/images/icons/quick-links--' . $svg . '.svg');
     }
     $variables['element']['#localized_options']['attributes']['class'] = array('quick-links__link');
     $variables['element']['#attributes']['class'] = array('quick-links__item');
@@ -555,77 +555,11 @@ function aclei_preprocess_menu_link(&$variables, $hook) {
   }
 }
 
-/**
- * Implements theme_webform_element().
- */
-function aclei_webform_element($variables) {
-  $element = $variables['element'];
-  $value = $variables['element']['#children'];
 
-  $wrapper_classes = array(
-    'form-item',
-  );
-
-  if (($element['#type'] == 'checkboxes' || $element['#type'] == 'radios')) {
-    $output = '<fieldset>' . "\n";
-  }
-
-  else {
-    $output = '<div class="' . implode(' ', $wrapper_classes) . '" id="' . $element['#id'] . '-wrapper">' . "\n";
-  }
-  $required = '';
-  if (!empty($element['#required'])) {
-    $required = '<span class="form-required" title="' . t('This field is required.') . '">(required)</span>';
-  }
-
-  if (!empty($element['#title'])) {
-    $title = $element['#title'];
-
-    if (($element['#type'] == 'checkboxes' || $element['#type'] == 'radios') && ($element['#title_display'] == 'before')) {
-      $output .= ' <legend>' . t('!title !required', array('!title' => filter_xss_admin($title), '!required' => $required)) . "</legend>\n";
-    }
-
-    elseif ($element['#type'] == 'date') {
-      $output .= ' <label>' . t('!title !required', array('!title' => filter_xss_admin($title), '!required' => $required)) . "</label>\n";
-    }
-    elseif ($element['#type'] == 'managed_file') {
-      $output .= ' <label for="' . $element['#id'] . (substr($element['#id'], -1, 1) == '-' ? 'upload' : '-upload') . '">' . t('!title !required', array('!title' => filter_xss_admin($title), '!required' => $required)) . "</label>\n";
-    }
-    else {
-      $output .= ' <label for="' . $element['#id'] . '">' . t('!title !required', array('!title' => filter_xss_admin($title), '!required' => $required)) . "</label>\n";
-    }
-  }
-
-  if (!empty($element['#description'])) {
-    $output .= ' <div class="description">' . $element['#description'] . "</div>\n";
-  }
-
-  $output .= '<div class="' . $element['#id'] . '">' . $value . '</div>' . "\n";
-
-  if (($element['#type'] == 'checkboxes' || $element['#type'] == 'radios') && ($element['#title_display'] == 'before')) {
-    $output .= "</fieldset>\n";
-  }
-
-  else {
-    $output .= "</div>\n";
-  }
-
-  return $output;
-}
-
-/**
- * Implements hook_js_alter().
- */
-function aclei_js_alter(&$js) {
-  $govcms_library_dir = 'profiles/govcms/libraries';
-  unset($js[$govcms_library_dir . '/html5placeholder/jquery.placeholder.js']);
-}
-
-/**
- * Implements theme_preprocess_image_style().
- */
-function aclei_preprocess_image_style(&$vars) {
-  if ($vars['style_name'] == 'image_and_text_landing_page') {
-    $vars['attributes']['class'][] = 'grayscale grayscale-fade';
-  }
+/// make the timestamp pretty
+function aclei_preprocess_node(&$vars, $hook) {
+  $vars['submitted'] = "<span class='postedStart'>Posted </span>".
+                       "<span class='postedTime'>at " . date("g:ia", $vars['created']) . " </span>".
+                       "<span class='postedDate'>on " . date("l, M jS, Y", $vars['created']) . " </span>".
+                       "<span class='postedBy'>by " . $vars['name'] ."</span>";
 }

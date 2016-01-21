@@ -83,8 +83,9 @@ $h6-font-size: 1    * $base-font-size;
 
 // Font stacks.
 $arial:               Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-$tradegothic:         'Trade Gothic W01 Light', $arial;
-$tradegothic-bold:    'TradeGothicW01-BoldCn20_675334', $arial;
+$tradegothic:         'TradeGothicLT', $arial;
+$tradegothic-bold:    'TradeGothicLT-Bold', $arial;
+$tradegothic-italic:  'TradeGothicLT-Oblique', $arial;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
@@ -103,7 +104,7 @@ $font-code:           $courier;
 //
 // Markup: sass-colors.html
 //
-// Styleguide: sass.colors
+// Styleguide 1.1
 
 // Define useful names of color values.
 $colors: (
@@ -123,13 +124,13 @@ $colors: (
   blue-medium:      #0f50a2,
   blue-dark:        #062e7f,
 
-  red:              #d51942,
+  red:              #4DC9E3,
   red-border:       #e41b3f,
   red-text:         #fa3160,
 
   purple-text:      #875e80,
 
-  orange:           #faa419,
+  orange:           #4DC9E3,
   green:            #82c341,
   yellow:           #ff0
 );
@@ -172,7 +173,6 @@ $breakpoint-no-query-fallbacks: true;
 $small:  480px;
 $medium: 720px;
 $large:  980px;
-$not-large: ($large - 1px) max-width;
 
 $gutter:      20px;
 $half-gutter: ($gutter / 2);

@@ -10,17 +10,7 @@
 
 <div class="layout-centered page-wrapper">
   <header class="header" role="banner">
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo"><img src="<?php print $logo; ?>" alt="<?php print t('ACLEI website'); ?>" class="header__logo-image" /></a>
-
-    <div class="header__name-and-slogan element-invisible">
-      <h1 class="header__site-name">
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><span><?php print $site_name; ?></span></a>
-      </h1>
-
-      <?php if ($site_slogan): ?>
-        <div class="header__site-slogan"><?php print $site_slogan; ?></div>
-      <?php endif; ?>
-    </div>
+    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $base_path . path_to_theme() . '/logo.png'; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
 
     <nav class="header__secondary-menu" role="navigation">
       <?php print theme('links__system_secondary_menu', array(
@@ -52,12 +42,12 @@
 
   <?php print render($page['highlighted']); ?>
   <?php print $breadcrumb; ?>
-  <div class="<?php print $layout; ?> sharing__container">
+  <div class="<?php print $layout; ?>">
 
     <div class="<?php print $layout; ?>__main main-content" role="main">
-      <div class="skip-link">
-        <a href="#skip-link" class="element-focusable" id="main-content">Back to top</a>
-      </div>
+
+      <a href="#skip-link" id="skip-content" class="element-invisible">Go to top of page</a>
+      <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
