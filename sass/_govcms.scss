@@ -188,3 +188,6 @@ a:focus, a:active {
 body {
   background: #333 url('../images/page_bg.png') no-repeat;
 }
+.sf-menu.is-expanded {
+  display: block !important;
+}
