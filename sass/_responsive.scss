@@ -1,11 +1,16 @@
 // extra mobile styles here
 
 
+@media (max-width: 1130px) {
+
+  //ACLEI styles
+  body {
+    background-position-x: right;
+    background-position-y: -400px;
+  }
+}
 @media (max-width: 980px) {
   .panel-1col-stacked .panel-col-top {
-    // .pane-govcms-social-links-services {
-    //   margin-bottom: 5em;
-    // }
     .panel-pane {
       width: 100%;
       display: block;

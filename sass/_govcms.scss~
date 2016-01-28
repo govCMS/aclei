@@ -186,8 +186,8 @@ a:focus, a:active {
 
 //ACLEI styles
 body {
-  background: #333 url('../images/page_bg.gif') no-repeat;
-  background: #333 url('../images/page_bg.svg') no-repeat top left;
+  background: #333 url('../images/page_bg.png') no-repeat;
+  background: url('../images/page_bg.svg') no-repeat center center fixed;
   background-size: cover;
 }
 .sf-menu.is-expanded {
@@ -195,9 +195,6 @@ body {
 }
 
 .page-wrapper {
-  //background-color: transparent;
+  background-color: transparent;
   outline: 0;
-  & > header {
-    background-color: #00A3DF;
-  }
 }
