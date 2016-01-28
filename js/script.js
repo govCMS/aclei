@@ -15,11 +15,19 @@
 Drupal.behaviors.mainMenuSuperfish = {
   attach: function(context, settings) {
 
-    var superfish_menu = $(".region-navigation .block__content > .menu");
+    var superfish_menu = $(".region-navigation .block__content > .menu");    
+    var superfish_submenu = $(".sf-depth-2");
+    var superfish_submenu2 = $(".sf-depth-3");
+    var superfish_submenu3 = $(".sf-depth-4");
+
+    superfish_submenu.addClass('sf-submenu');
+    superfish_submenu2.addClass('sf-submenu');
+    superfish_submenu3.addClass('sf-submenu');
 
     superfish_menu.addClass('sf-menu');
     superfish_menu.superfish({
-      autoArrows:  false
+      autoArrows:  true,
+      
     });
   }
 };
