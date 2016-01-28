@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1190.5 533.3" style="enable-background:new 0 0 1190.5 533.3;" xml:space="preserve">
@@ -13,7 +12,6 @@
 	.st6{fill:#B1B3B5;}
 	.st7{clip-path:url(#SVGID_4_);}
 </style>
-<title>ACLEI_BG</title>
 <rect y="-7.8" class="st0" width="1190.6" height="541.1"/>
 <polygon class="st1" points="1190.6,-90.3 0.1,-90.3 0,50.8 25.5,69.7 48,70.5 353.1,70.9 1190.6,456.9 "/>
 <polygon class="st2" points="94.7,190.6 94.7,196.1 29.9,196.1 29.9,213 94.7,213 94.7,218.5 94.7,218.5 107.3,204.5 "/>
@@ -29,10 +27,10 @@
 <g>
 	<g>
 		<defs>
-			<polyline id="SVGID_1_" points="502,-57.7 502,488.9 0,488.9 0,-58.3 			"/>
+			<polyline id="SVGID_1_" points="502,-57.7 502,488.9 0,488.9 0,-58.3"/>
 		</defs>
 		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			<use xlink:href="#SVGID_1_" style="overflow:visible;"/>
 		</clipPath>
 		<g class="st5">
 			<path class="st6" d="M-22.6,206.8L30,169.1V186l-52.6,78.9L-22.6,206.8L-22.6,206.8z M-22.6,564.6L30,213v-16.9l-52.6,95.3
@@ -44,13 +42,13 @@
 <g>
 	<g>
 		<defs>
-			<polyline id="SVGID_3_" points="502,488.9 0,488.9 0,-58.3 			"/>
+			<polyline id="SVGID_3_" points="502,488.9 0,488.9 0,-58.3"/>
 		</defs>
 		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			<use xlink:href="#SVGID_3_" style="overflow:visible;"/>
 		</clipPath>
 		<g class="st7">
-			<polygon class="st3" points="29.9,62 -22.7,-16.9 -22.7,41.2 29.9,78.9 			"/>
+			<polygon class="st3" points="29.9,62 -22.7,-16.9 -22.7,41.2 29.9,78.9"/>
 		</g>
 	</g>
 </g>
