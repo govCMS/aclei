@@ -1,2 +1,4 @@
 .sass-cache/
 .sass-cache/*
+sass/.fuse_hidden*
+images/.fuse_hidden*
