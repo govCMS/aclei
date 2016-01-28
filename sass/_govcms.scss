@@ -190,19 +190,21 @@ body {
   background: #333 url('../images/page_bg.svg') no-repeat top left;
   background-size: cover;
 }
+.header {
+  padding-top: 0;
+}
 .sf-menu.is-expanded {
   display: block !important;
 }
 
 .page-wrapper {
-  //background-color: transparent;
   outline: 0;
   & > header {
     background-color: #00A3DF;
   }
 }
 
-//ACLEI menu styles
+// ACLEI menu styles
 #superfish-1 {
     font-size: 84.75%;
     .sf-sub-indicator {
@@ -221,9 +223,15 @@ body {
           left:-100% !important;
         }
     }
+    .sf-depth-1 > a {
+      padding: 7px 20px 8px 20px;
+    }
 }
 #block-service-links-service-links {
     display:none;
+}
+.header__region {
+  margin-top: 0.6em;
 }
 
 #block-search-api-page-default-search {
