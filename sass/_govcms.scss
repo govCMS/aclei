@@ -192,24 +192,25 @@ body {
   display: block !important;
 }
 //ACLEI menu styles
-.sf-submenu{
-    white-space:pre-wrap;
- 
-}
-
 #superfish-1 { 
     font-size: 84.75%;
     .sf-sub-indicator {
         opacity: 0.6;
     }
+    .sf-submenu{
+       white-space:pre-wrap;
+    }
     & > li > a .sf-sub-indicator {
         display: none;
     }
     li:last-child ul {
-        left: -70%;
+        left: -82%;
         top:10;   
         ul {
           left:-100% !important;
         }
     }
+}
+#block-service-links-service-links{
+    display:none;
 }
