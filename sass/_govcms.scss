@@ -227,6 +227,47 @@ body {
       padding: 7px 20px 8px 20px;
     }
 }
+.pane-menu-frontpage-quicklinks {
+  .quick-links__link {
+    background-size: 42px 42px;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    background-color: #e2e2e2;
+    &:hover, &:focus {
+      background-color: #333333;
+    }
+  }
+  #submissions {
+    background-image: url('../images/icons/icon-clipboard.svg');
+    &:hover, &:focus {
+      background-image: url('../images/icons/icon-clipboard-hl.svg');
+    }
+  }
+  #speeches {
+    background-image: url('../images/icons/icon-megaphone.svg');
+    &:hover, &:focus {
+      background-image: url('../images/icons/icon-megaphone-hl.svg');
+    }
+  }
+  #corporate {
+    background-image: url('../images/icons/icon-liftdesk.svg');
+    &:hover, &:focus {
+      background-image: url('../images/icons/icon-liftdesk-hl.svg');
+    }
+  }
+  #contact {
+    background-image: url('../images/icons/icon-phone.svg');
+    &:hover, &:focus {
+      background-image: url('../images/icons/icon-phone-hl.svg');
+    }
+  }
+  #careers {
+    background-image: url('../images/icons/icon-reload-life.svg');
+    &:hover, &:focus {
+      background-image: url('../images/icons/icon-reload-life-hl.svg');
+    }
+  }
+}
 #block-service-links-service-links {
     display:none;
 }

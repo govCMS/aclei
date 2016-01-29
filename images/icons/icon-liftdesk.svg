@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="53.448px" height="55.5px" viewBox="0 0 53.448 55.5" enable-background="new 0 0 53.448 55.5" xml:space="preserve">
+<rect x="21.282" y="1.73" fill="#333333" width="32.166" height="10.77"/>
+<rect x="22.288" y="14.971" fill="none" stroke="#333333" stroke-width="1.936" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="30.154" height="5.029"/>
+<path fill="none" stroke="#333333" stroke-width="2.5" stroke-miterlimit="10" d="M25.782,24.5c-0.5,1.833-2.334,6.166-2.334,9.333
+	s10.5,13,10.5,19.5c3.334,0,5,0,7,0c0-5.833,10.5-14.875,10.5-19.375c0-4.083-2.083-8.708-2.333-9.625"/>
+<path fill="#333333" stroke="#333333" stroke-miterlimit="10" d="M33.963,33.083c0-1.877,1.521-3.398,3.397-3.398
+	c1.877,0,3.397,1.521,3.397,3.398c0,1.876-1.521,3.397-3.397,3.397C35.484,36.48,33.963,34.959,33.963,33.083"/>
+<line fill="none" stroke="#333333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.434" y1="52.762" x2="37.286" y2="35.041"/>
+<path fill="none" stroke="#333333" stroke-width="2" stroke-miterlimit="10" d="M1.157,49.458c1.75-1.875,9.875-10.75,11.5-9.375
+	S6.282,51.208,7.532,52.708s9.5-8.125,10.75-6.5s-4.375,6.125-3.125,7.25s7-3.875,7.75-3s-1.375,3.375,0.125,3.375
+	s6.375-0.125,6.375-0.125"/>
+</svg>

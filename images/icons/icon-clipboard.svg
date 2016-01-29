@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="56.666px" height="58.335px" viewBox="0 0 56.666 58.335" enable-background="new 0 0 56.666 58.335" xml:space="preserve">
+<g>
+	<defs>
+		<polyline id="SVGID_1_" points="-267.334,-83.225 52.346,-83.225 52.346,56.335 -267.334,56.335 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#221E20" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="
+		M50.323-40.623"/>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#221E20" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="
+		M50.323-78.998"/>
+</g>
+<g>
+	<defs>
+		<polyline id="SVGID_3_" points="-267.334,-83.225 52.346,-83.225 52.346,56.335 -267.334,56.335 		"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+</g>
+<path fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M8.698,17.502L23.24,3.668h22.125v51.25H8.677C8.677,54.918,8.698,17.127,8.698,17.502z"/>
+<g>
+	<defs>
+		<polyline id="SVGID_5_" points="-267.334,-83.225 52.346,-83.225 52.346,56.335 -267.334,56.335 		"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	
+		<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		6.448,39.252 17.012,32.252 51.365,32.252 51.365,45.502 16.84,45.502 	"/>
+</g>
+<rect x="16.782" y="32.252" fill="#333333" width="28.583" height="13.333"/>
+<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.865" y1="25.585" x2="37.532" y2="25.585"/>
+<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="9.449" y1="18.742" x2="37.532" y2="18.67"/>
+<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="24.498" y1="11.339" x2="37.699" y2="11.168"/>
+<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="23.44" y1="17.854" x2="23.54" y2="4.653"/>
+</svg>
