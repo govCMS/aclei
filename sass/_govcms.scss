@@ -180,11 +180,13 @@ a:focus, a:active {
 }
 
 //Need to fix up this font stuff at some point
-*, html, body {
+*,
+html,
+body {
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 
-//ACLEI styles
+// ACLEI styles
 body {
   background: #333 url('../images/page_bg.gif') no-repeat;
   background: #333 url('../images/page_bg.svg') no-repeat top left;
@@ -228,12 +230,34 @@ body {
     }
 }
 #block-service-links-service-links {
-    display:none;
+  display:none;
 }
 .header__region {
   margin-top: 0.6em;
 }
-
 #block-search-api-page-default-search {
-    margin-right: 0;
+  margin-right: 0;
+}
+
+.rslides_here:before {
+  background-color: $primaryColour;
+}
+
+
+// loop through each of the homepage grid images
+@each $int, $color in(
+  '1' $primaryColour,
+  '2' #0099FE,
+  '3' #00CC32,
+  '4' #FF9901,
+) {
+  .panel-pane:nth-of-type(#{$int}) .bean-image-and-text .image-title h2 {
+    background-color: rgba( darken($color, 35%) ,0.6);
+    &:after {
+      background-color: $color !important;
+      @if $int == '1' {
+        // TODO: change the svg arrow to a black verison
+      }
+    }
+  }
 }
