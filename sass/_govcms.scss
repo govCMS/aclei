@@ -155,11 +155,6 @@ body.front div.panel-col-top div.pane-blogs-archive ul.views-summary {
   color: #1e70ac;  // was #3e90cc
 }
 
-// better contrast
-.mission__title {
-  color: #307eaf;
-}
-
 // set back to default
 a:hover, a:focus, a:active {
   outline: #E1E31B none medium !important;
@@ -190,7 +185,7 @@ body {
 body {
   background: #333 url('../images/page_bg.gif') no-repeat;
   background: #333 url('../images/page_bg.svg') no-repeat top left;
-  background-size: cover;
+  background-size: 171em;
 }
 .header {
   padding-top: 0;
@@ -207,6 +202,22 @@ body {
 }
 
 // ACLEI menu styles
+
+
+// better contrast
+.mission__title {
+  background-color: #00A3DF;
+  color: #222;
+  height: 60px;
+  &:after {
+    top: 0;
+  }
+}
+
+.header__logo-image {
+  height: 64px;
+}
+
 #superfish-1 {
     font-size: 84.75%;
     .sf-sub-indicator {
@@ -300,6 +311,30 @@ body {
       @if $int == '1' {
         // TODO: change the svg arrow to a black verison
       }
+    }
+  }
+}
+
+
+.quick-links__item {
+  a {
+    color: #333;
+  }
+}
+
+.region-footer-bottom {
+  background-color: #00A3DF;
+  &:before {
+    background-image: url("../images/footer-bottom-tab.png");
+  }
+  li a {
+    &:before {
+      // border-left-color: $primaryColour !important;
+      border-left-color: #444 !important;
+    }
+    &:link,
+    &:visited {
+      color: #222;
     }
   }
 }
