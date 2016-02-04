@@ -1,0 +1,9 @@
+// IE11 only rules
+
+// crazy MS voodoo to make it work:
+_:-ms-fullscreen, :root
+.header__logo-image { // <- your selector
+
+  max-width: none;
+
+}
