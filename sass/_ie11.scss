@@ -3,7 +3,9 @@
 // crazy MS voodoo to make it work:
 _:-ms-fullscreen, :root
 .header__logo-image { // <- your selector
-
   max-width: none;
-
+}
+_:-ms-fullscreen, :root
+body { // <- your selector
+  background: #333 url("../images/page_bg.svg") no-repeat left -56.4em;
 }
