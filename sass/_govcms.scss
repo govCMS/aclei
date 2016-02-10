@@ -337,3 +337,10 @@ body {
     }
   }
 }
+
+.sf-main-menu {
+  .hidden-in-main-menu {
+    display: none;
+    visibility: hidden;
+  }
+}
