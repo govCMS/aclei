@@ -87,5 +87,17 @@ Drupal.behaviors.mobileNavigation = {
   }
 };
 
+(function ($) {
+    $(document).ready(function () {
+        //hide all on start report summeries on load
+        $('div.views-field-field-report-summary').toggle();
+        $('a').click(function(evt) {
+            $(this).parent().parent().parent().children('div.views-field-field-report-summary').toggle();
+            //alert(prnt);
+            return false;
+        });
+    });
+    
+})(jQuery);
 
 })(jQuery, Drupal, this, this.document);
