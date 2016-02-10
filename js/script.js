@@ -92,7 +92,10 @@ Drupal.behaviors.mobileNavigation = {
         //hide all report summeries on load
         $('div.views-field-field-report-summary').toggle();
         $('a').click(function(evt) {
-            $(this).parent().parent().parent().children('div.views-field-field-report-summary').toggle();
+            if($(this).parent().parent().parent().find('div.views-field-field-report-summary').length == 1) {
+                $(this).parent().parent().parent().children('div.views-field-field-report-summary').toggle()
+                return false;
+            }
         });
     });
     
