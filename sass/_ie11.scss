@@ -7,6 +7,7 @@ _:-ms-fullscreen, :root
 }
 _:-ms-fullscreen, :root
 body { // <- your selector
-  background: #333 url("../images/page_bg.svg") no-repeat left -56.4em;
-  background-size: 171em;
+  //background: #333 url("../images/page_bg.svg") no-repeat left -56.4em;
+  background: #333 url("../images/page_bg.svg") no-repeat left -47.8em;
+  background-size: 171em 171em;
 }
