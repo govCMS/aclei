@@ -2627,10 +2627,10 @@ body {
 
 .rslides_tabs button:focus {
   background-color: #00A3DF;
-  border: 0; }
+  border: 0 !important; }
 
 .rslides_tabs button:active {
-  border: 0; }
+  border: 0 !important; }
 
 .mission__title {
   background-color: #00A3DF;
