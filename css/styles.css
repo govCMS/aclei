@@ -2625,6 +2625,13 @@ body {
   border-color: #00A3DF;
   background-color: #00A3DF; }
 
+.rslides_tabs button:focus {
+  background-color: #00A3DF;
+  border: 0; }
+
+.rslides_tabs button:active {
+  border: 0; }
+
 .mission__title {
   background-color: #00A3DF;
   color: #fff;
