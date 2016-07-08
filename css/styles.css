@@ -2621,6 +2621,10 @@ body {
 .rslides_tabs button:before {
   width: 0; }
 
+.rslides_tabs button:hover {
+  border-color: #00A3DF;
+  background-color: #00A3DF; }
+
 .mission__title {
   background-color: #00A3DF;
   color: #fff;
