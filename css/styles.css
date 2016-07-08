@@ -2612,6 +2612,15 @@ body {
   .page-wrapper > header {
     background-color: #00A3DF; }
 
+.rslides_tabs button {
+  padding: 3px 8px;
+  min-height: 0;
+  border-left: 0;
+  margin-right: 5px; }
+
+.rslides_tabs button:before {
+  width: 0; }
+
 .mission__title {
   background-color: #00A3DF;
   color: #fff;
