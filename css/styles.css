@@ -1973,8 +1973,8 @@ tr.selected td {
   line-height: 1.33333rem;
   position: relative;
   display: block;
-  /*height: 60px;*/
-  padding: 17px 19px 17px 84px;
+  height: 60px;
+  padding: 20px 19px 8px 84px;
   border: 1px solid #e2e2e2;
   background-color: #f5f5f5;
   background: linear-gradient(to bottom, #e2e2e2 0%, #f5f5f5 100%);
@@ -1982,6 +1982,9 @@ tr.selected td {
   color: #231f20;
   font-family: "TradeGothicLT-Bold", Arial, Helvetica, "Nimbus Sans L", sans-serif;
   text-decoration: none; }
+
+.quick-links__link#corporate {
+  padding: 10px 19px 8px 84px; }
 
 .quick-links__link:focus,
 .quick-links__link:hover {
